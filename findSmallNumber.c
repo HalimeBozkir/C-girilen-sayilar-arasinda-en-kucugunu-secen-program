@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+	int a,min=100,counter=1,num;
+	printf("Enter the number of integers to be processed:");
+	scanf("%d",&a);
+
+	while(counter<=a){
+		printf("Enter an integer:");
+		scanf("%d",&num);
+		if(num<min)
+		{
+			min=num; 
+			
+		}
+		counter++;
+			
+	}
+
+	printf("The smallest integer is:%d\n",min);
+	return 0;
+}
